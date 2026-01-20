@@ -1,0 +1,24 @@
+# never upload datasets / generated outputs
+data/
+out/
+out_bgl/
+
+# common dataset/output types
+*.log
+*.npz
+*.csv
+
+# allow only small final tables if you keep them in results/
+results/
+!results/**/*.csv
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+.D

@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: "Smart Trace Construction (STC) MT3 Prototype"
+message: "If you use this software, please cite the thesis."
+authors:
+  - family-names: Salamzade
+    given-names: Islam
+version: 0.1.0
+date-released: 2026-01-20
