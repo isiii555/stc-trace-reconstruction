@@ -9,7 +9,11 @@ out_bgl/
 *.csv
 
 # allow only small final tables if you keep them in results/
-results/
+results/*
+!results/
+!results/README.md
+!results/*.csv
+!results/**/
 !results/**/*.csv
 
 # python

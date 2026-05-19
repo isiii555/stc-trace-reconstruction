@@ -1,14 +1,26 @@
+import argparse
 import pandas as pd
 from pathlib import Path
 from datetime import timedelta
 from collections import deque
 
 # ---- Hyperparameters ----
-DELTA_SECONDS = 10
+DEFAULT_DELTA_SECONDS = 10
 K_HISTORY = 5
 MAX_OPEN_TRACES = 8000
 
 IN_PATH = Path("out/eventlog_oracle_blockid.csv")
+
+parser = argparse.ArgumentParser(description="STC v2 history+IP trace reconstruction.")
+parser.add_argument(
+    "--delta",
+    type=int,
+    default=DEFAULT_DELTA_SECONDS,
+    help=f"Inactivity threshold in seconds. Default: {DEFAULT_DELTA_SECONDS}",
+)
+args = parser.parse_args()
+
+DELTA_SECONDS = args.delta
 OUT_PATH = Path(f"out/eventlog_STC_v2_history_ip_delta{DELTA_SECONDS}s.csv")
 
 HIT_IN_HISTORY_BONUS = 2.0
