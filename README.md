@@ -1,6 +1,6 @@
-# Smart Trace Construction (STC) - MT3 Prototype
+# Smart Trace Construction (STC)
 
-This repository contains an MT3-stage prototype for trace reconstruction from correlation-weak software system logs.
+This repository contains prototype for trace reconstruction from correlation-weak software system logs.
 
 The prototype is general in design: it transforms software system logs into process-mining-ready event logs using Smart Trace Construction. HDFS and BGL are implemented evaluation profiles used in the thesis. Other logs can be supported by adding a parser/profile or by mapping structured CSV columns such as timestamp, activity, and component.
 
